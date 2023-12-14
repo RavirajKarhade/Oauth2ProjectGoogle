@@ -11,7 +11,7 @@ import org.springframework.security.web.DefaultSecurityFilterChain;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfiguration {
 
-	
+	//it is a security with any request autehntication 
 	protected void configure(HttpSecurity http) throws Exception{
 		
 		http .authorizeRequests() .anyRequest() .authenticated() .and()
